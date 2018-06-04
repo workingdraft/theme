@@ -10,13 +10,13 @@ get_header(); ?>
 <dl>
 
 <?php
-	$posts = get_posts('numberposts=-1&offset=0');
-	foreach($posts as $post):
+  $posts = get_posts('numberposts=-1&offset=0');
+  foreach($posts as $post):
 ?>
-	<dt><?php the_time('d. F Y') ?></dt>
-	<dd><a href="<?php the_permalink() ?>"><?php the_title() ?></a></dd>
+  <dt><?php the_time('d. F Y') ?></dt>
+  <dd><a href="<?php the_permalink() ?>"><?php the_title() ?></a></dd>
 <?php
-	endforeach;
+  endforeach;
 ?>
 
 

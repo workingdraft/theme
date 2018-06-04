@@ -8,9 +8,9 @@
 
 
 <?php if($comments): ?>
-	<?php wp_list_comments(array('callback' => 'theme_comment')); ?>
+  <?php wp_list_comments(array('callback' => 'theme_comment')); ?>
 <?php else : ?>
-	<p>Noch keine Kommentare oder Backlinks.</p>
+  <p>Noch keine Kommentare oder Backlinks.</p>
 <?php endif; ?>
 
 
@@ -20,9 +20,9 @@
 
 
 <?php if(comments_open()): ?>
-	<fieldset id="kommentarformular">
-		<?php comment_form(); ?>
-	</fieldset>
+  <fieldset id="kommentarformular">
+    <?php comment_form(); ?>
+  </fieldset>
 <?php endif; ?>
 
 

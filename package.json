@@ -1,0 +1,28 @@
+{
+  "name": "wd-theme",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "repository": "",
+  "author": "Hans Christian Reinl <info@drublic.de>",
+  "private": true,
+  "scripts": {
+    "js:build": "webpack -p --config webpack.config.prod.js",
+    "js:dev": "webpack",
+    "css:build": "postcss --output dist/index.css app/index.css",
+    "build": "yarn js:build && yarn css:build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "babel-loader": "^8.0.0-beta",
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.22",
+    "postcss-cli": "^5.0.0",
+    "postcss-import": "^11.1.0",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1"
+  }
+}
+

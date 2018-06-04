@@ -1,0 +1,74 @@
+/**
+ * The Site's footer
+ */
+
+.footer {
+  margin-top: 5rem;
+  padding: 2rem 0 0;
+  font-size: 0.875rem;
+  background: #211421;
+  color: #fff;
+  text-align: center;
+}
+
+.footer a {
+  color: #e8d9e8;
+}
+
+.footer a:visited {
+  color: #e8d9e8;
+}
+
+.footer__authors {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__authors>li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__authors a {
+  width: 6rem;
+  padding: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer__authors img {
+  width: 64px;
+  width: 4rem;
+  height: 64px;
+  height: 4rem;
+  margin: 0 auto 16px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: block;
+}
+
+.footer__content {
+  margin: 3rem 0;
+}
+
+.footer__navigation {
+  padding: 16px 32px 32px;
+  padding: 1rem 2rem 2rem;
+  background: #110a11;
+}
+
+.footer__navigation>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__navigation>ul>li {
+  display: inline;
+}
+
+.footer__navigation>ul>li>a {
+  margin: 0 16px;
+  margin: 0 1rem;
+}

@@ -1,0 +1,144 @@
+/*
+ * Theme Name: Working Draft
+ * Theme URI: http://working-draft.de
+ * Description: Dreister Ripoff mit wenigen Verschönerungen
+ * Version: 1.0
+ * Author: Peter Kröner
+ * Author URI: http://www.peterkroener.de
+ */
+@import url("components/base.css");
+@import url("components/header.css");
+@import url("components/navigation.css");
+@import url("components/card.css");
+@import url("components/content.css");
+@import url("components/text.css");
+@import url("components/button.css");
+@import url("components/footer.css");
+
+/* Basics & Layout */
+#schnorren.left {
+  float: left;
+}
+
+.clear {
+  display: block;
+  clear: both;
+}
+
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '.';
+  clear: both;
+  height: 0;
+  zoom: 1;
+}
+
+/* Links */
+
+a.podpress_play_button {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+#navi {
+  float: left;
+}
+
+#schnorren {
+  background: #eedaee;
+  border: 6px solid #8f098f;
+  display: inline;
+  display: inline-block;
+  float: right;
+  margin: 1em 0;
+  padding: 0 16px;
+}
+
+.postcontainer {
+  line-height: 1.65;
+  border-top: 1px solid #999;
+  margin: 2em 0;
+  padding: 2em 0;
+}
+
+.nav {
+  border-top: 1px solid #999;
+  margin: 2em 0 0 0;
+  padding: 2em 0 0 0;
+}
+
+#footer {
+  border-top: 1px solid #999;
+  padding: 2em 0 0 0;
+}
+
+/* Typo */
+
+textarea {
+  height: 20em;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 0.5em
+}
+
+/* Dynamischer Content am Post-Ende */
+
+.podPress_content {
+  float: left;
+}
+
+.wp-flattr-button {
+  float: right
+}
+
+/* Kommentare */
+
+.comment {
+  margin-left: 2em;
+}
+
+.commenthead {
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+input[type=text] {
+  width: 100%;
+}
+
+/* Navigation */
+
+.nav {
+  margin: 2em 0;
+  font-weight: bold;
+}
+
+.nav-next {
+  float: left;
+}
+
+.nav-prev {
+  float: right;
+}
+
+/* Message */
+
+.message {
+  background: #eedaee;
+  border: 6px solid #8f098f;
+  margin-top: 2rem;
+  padding: 0 1rem 1rem;
+  overflow: hidden;
+}
+

@@ -1,0 +1,41 @@
+@import url("variables.css");
+
+.button {
+  position: relative;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  font-family: Roboto, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4em;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: var(--color--accent);
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.button--primary {
+  background: var(--color--highlight);
+}
+
+.button:hover::after {
+  opacity: 0.15;
+}
+
+.button--right {
+  float: right;
+}

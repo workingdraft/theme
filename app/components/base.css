@@ -1,0 +1,30 @@
+@import url("variables.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: Roboto, sans-serif;
+  color: var(--color--base);
+  border-top: 0.5rem solid var(--color--highlight);
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 21rem;
+  background: var(--color--header);
+}
+
+a,
+a:visited {
+  color: var(--color--highlight);
+}

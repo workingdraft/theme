@@ -1,0 +1,20 @@
+.content {
+  max-width: 67.5rem;
+  margin-top: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content_inner {
+  margin-left: 7.5rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    margin-top: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

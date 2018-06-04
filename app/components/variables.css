@@ -1,0 +1,13 @@
+:root {
+  --color--base: #102027;
+  --color--highlight: #8f098f;
+  --color--accent: #90a0aa;
+  --color--header: #e3ebf0;
+  --color--navigation: #90a0aa;
+  --color--border: #dde5eb;
+
+  --color--audio-background: #d0e0ea;
+  --color--audio--select: var(--color--highlight);
+
+  --color--button: #90a0aa;
+}
