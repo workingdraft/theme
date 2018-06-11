@@ -9,7 +9,25 @@
   line-height: 1.35em;
 }
 
-.text_type-3 {
+.text--content h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.25rem;
+  line-height: 1.35em;
+}
+
+.text--content dt {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.text_type-3,
+.text--content p,
+.text--content li,
+.text--content dd,
+.comment p,
+.comment-respond p {
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
   font-weight: 400;
@@ -29,5 +47,3 @@
   font-weight: 400;
   line-height: 1.5em;
 }
-
-

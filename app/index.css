@@ -14,6 +14,7 @@
 @import url("components/text.css");
 @import url("components/button.css");
 @import url("components/footer.css");
+@import url("components/comments.css");
 
 /* Basics & Layout */
 #schnorren.left {
@@ -64,12 +65,6 @@ a.podpress_play_button {
   padding: 2em 0;
 }
 
-.nav {
-  border-top: 1px solid #999;
-  margin: 2em 0 0 0;
-  padding: 2em 0 0 0;
-}
-
 #footer {
   border-top: 1px solid #999;
   padding: 2em 0 0 0;
@@ -98,10 +93,6 @@ dt {
 
 /* Kommentare */
 
-.comment {
-  margin-left: 2em;
-}
-
 .commenthead {
   font-weight: bold;
 }
@@ -120,8 +111,10 @@ input[type=text] {
 /* Navigation */
 
 .nav {
-  margin: 2em 0;
+  margin: 2rem 0 0;
   font-weight: bold;
+  overflow: hidden;
+  padding: 2rem 0 0 0;
 }
 
 .nav-next {

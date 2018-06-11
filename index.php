@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php $current_page = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; ?>
+
 <?php
   $i = 0;
 
@@ -11,22 +13,9 @@
     endwhile;
 ?>
 
-<div class="card card--highlight">
-  <h2 class="text text_type-2 card_title">
-    Sponsoren gesucht!
-  </h2>
-
-  <p class="text text_type-3">
-    Als Podcast versuchen wir die Qualität der Aufnahmen hoch zu halten. Dafür verwenden wir Tools, die nicht kostenlos sind.
-    Auch unser Aufnahme-Equipment kostet Geld. Mit rund 15.000 Downloads pro Folge im Schnitt haben wir Herausforderungen
-    im Hosting zu bewältigen, vor allem der Traffic ist recht hoch. Um diese Kosten decken zu können, suchen wir Sponsoren.
-    Wenn ihr unseren Podcast gut findest, sprecht mit euren Chefs. Bei Interesse, kontaktiert uns per E-Mail: sponsoring@workingdraft.de.
-  </p>
-
-  <div class="card_action">
-    <button class="button button--primary">Jetzt spenden</button>
-  </div>
-</div>
+<?php if ($current_page == 1) : ?>
+  <?php include(get_template_directory() . '/moneymoney.php'); ?>
+<?php endif; ?>
 
 <?php
   while (have_posts()) :
@@ -48,12 +37,17 @@
 <?php endif; ?>
 
 
-<?php if($wp_query->max_num_pages > 1 ): ?>
-<p class="nav">
-  <span class="nav-prev"><?php next_posts_link('Ältere Revisionen  &rarr;'); ?></span>
-  <span class="nav-next"><?php previous_posts_link('&larr; Neuere Revisionen'); ?></span>
-  <span class="clear"></span>
-</p>
+<?php if ($wp_query->max_num_pages > 1 ): ?>
+  <p class="nav">
+    <span class="nav-prev">
+      <?php next_posts_link('Ältere Revisionen  &rarr;'); ?>
+    </span>
+
+    <span class="nav-next">
+      <?php previous_posts_link('&larr; Neuere Revisionen'); ?>
+    </span>
+  </p>
+
 <?php endif; ?>
 
 <?php get_footer(); ?>
