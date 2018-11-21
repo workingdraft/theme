@@ -45,9 +45,9 @@
     </a>
   <?php endif; ?>
 
-  <div class="card_audio audio" data-audio>
-    <audio preload="auto" class="card_audio--320" data-audio-player>
-      <source src="/wd-320.mp3" type="audio/mpeg">
+  <div class="card_audio" data-revision>
+    <audio preload="auto" data-audio-player>
+      <source src="<?php bloginfo( "template_url" ); ?>/dist/wd-336.mp3" type="audio/mpeg">
     </audio>
   </div>
 

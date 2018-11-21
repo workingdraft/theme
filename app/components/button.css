@@ -12,13 +12,8 @@
   font-weight: 500;
   border-radius: 2px;
   text-transform: uppercase;
-  text-decoration: none;
   cursor: pointer;
   background: var(--color--accent);
-}
-
-a.button:visited {
-  color: #fff;
 }
 
 .button::after {

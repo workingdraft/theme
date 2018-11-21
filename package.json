@@ -12,11 +12,15 @@
     "css:build": "postcss --output dist/index.css app/index.css",
     "build": "yarn js:build && yarn css:build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "wd-audio-player": "1.0.0-alpha.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.49",
     "@babel/preset-env": "^7.0.0-beta.49",
     "babel-loader": "^8.0.0-beta",
+    "babel-polyfill": "^6.26.0",
     "cssnano": "^3.10.0",
     "postcss": "^6.0.22",
     "postcss-cli": "^5.0.0",
@@ -25,4 +29,3 @@
     "webpack-cli": "^3.0.1"
   }
 }
-

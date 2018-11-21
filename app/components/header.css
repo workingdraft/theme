@@ -21,10 +21,7 @@
 
 .header_logo_name {
   display: inline-block;
-  color: var(--color--highlight);
-  font-size: 0.875rem;
-  line-height: 1.3;
-  font-weight: bold;
+  height: 5rem;
   text-decoration: none;
 }
 

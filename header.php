@@ -17,10 +17,17 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/dist/index.css">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons"
+    as="style"
+    onload="this.rel = 'stylesheet'"
+  >
+  <link
+    rel="preload"
+    href="<?php bloginfo( 'template_url' ); ?>/dist/index.css"
+    as="style"
+    onload="this.rel = 'stylesheet'"
+  >
 
   <script async src="<?php bloginfo( 'template_url' ); ?>/dist/index.js"></script>
 <?php
@@ -43,22 +50,11 @@
 
   <header class="header">
     <a href="<?php bloginfo(url); ?>" class="header_logo">
-      <svg
-        viewBox="0 0 450 450"
-        class="header_logo_icon">
-
-        <rect x="198" y="110" fill="#8F098F" width="54" height="145" />
-        <circle fill="#8F098F" cx="225" cy="300" r="31" />
-        <circle fill="none" stroke="#8F098F" stroke-width="38" cx="225" cy="225" r="185" />
-      </svg>
-
-      <span class="header_logo_name">
-        <?php bloginfo('name') ?>
-      </span>
-
-      <p class="text_type-3">
-        <?php bloginfo('description') ?>
-      </p>
+      <img
+        src="<?php bloginfo( 'template_url' ); ?>/app/images/logo.png"
+        alt="<?php bloginfo('name') ?>"
+        class="header_logo_name"
+      />
     </a>
   </header>
 
