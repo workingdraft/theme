@@ -1,18 +1,16 @@
 @import url("variables.css");
 
 .header {
-  float: left;
-  padding: 1rem;
-  width: 8rem;
+  padding-top: 1rem;
 }
 
 .header_logo {
   position: relative;
   display: block;
-  max-width: 11rem;
   width: 100%;
   text-align: center;
   text-decoration: none;
+  padding: 1rem;
 }
 
 .header_logo_icon {
@@ -21,11 +19,12 @@
 
 .header_logo_name {
   display: inline-block;
-  height: 5rem;
+  width: 100%;
+  max-width: 15rem;
   text-decoration: none;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   .header {
     float: left;
     padding: 1rem 2rem 2rem 3rem;
@@ -33,6 +32,6 @@
   }
 
   .header_logo_name {
-    font-size: 1.5rem;
+    max-width: 20rem;
   }
 }

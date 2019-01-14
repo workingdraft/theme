@@ -51,7 +51,7 @@
   <header class="header">
     <a href="<?php bloginfo(url); ?>" class="header_logo">
       <img
-        src="<?php bloginfo( 'template_url' ); ?>/app/images/logo.png"
+        src="<?php bloginfo( 'template_url' ); ?>/app/images/logo.svg"
         alt="<?php bloginfo('name') ?>"
         class="header_logo_name"
       />

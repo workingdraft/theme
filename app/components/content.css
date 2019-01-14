@@ -1,16 +1,17 @@
 .content {
   max-width: 67.5rem;
-  margin-top: 10rem;
+  margin-top: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   .content {
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 10rem;
   }
 
   .content_inner {

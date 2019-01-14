@@ -11,6 +11,12 @@
   text-align: center;
 }
 
+.footer__content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+
 .footer a {
   color: #e8d9e8;
 }
@@ -42,7 +48,6 @@
   width: 4rem;
   height: 64px;
   height: 4rem;
-  margin: 0 auto 16px;
   margin: 0 auto 1rem;
   border-radius: 50%;
   display: block;

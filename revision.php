@@ -52,10 +52,8 @@
   </div>
 
   <?php if ( !is_single() ) : ?>
-    <a href="<?php the_permalink(); ?>" class="card_link">
-      <div class="text text_type-3">
-        <?php the_excerpt(); ?>
-      </div>
+    <a href="<?php the_permalink(); ?>" class="card_link text text_type-3">
+      <?php the_excerpt(); ?>
     </a>
 
     <div class="card_action">

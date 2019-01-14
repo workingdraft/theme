@@ -10,15 +10,15 @@
 @import url("../node_modules/normalize.css/normalize.css");
 @import url("../node_modules/wd-audio-player/player.css");
 
-@import url("components/base.css");
-@import url("components/header.css");
-@import url("components/navigation.css");
-@import url("components/card.css");
-@import url("components/content.css");
-@import url("components/text.css");
-@import url("components/button.css");
-@import url("components/footer.css");
-@import url("components/comments.css");
+@import url("./components/base.css");
+@import url("./components/header.css");
+@import url("./components/navigation.css");
+@import url("./components/card.css");
+@import url("./components/content.css");
+@import url("./components/text.css");
+@import url("./components/button.css");
+@import url("./components/footer.css");
+@import url("./components/comments.css");
 
 /* Basics & Layout */
 #schnorren.left {
