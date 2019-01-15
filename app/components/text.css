@@ -30,4 +30,6 @@
   line-height: 1.5em;
 }
 
-
+.text_padded-right {
+  padding-right: 1rem;
+}

@@ -1,5 +1,7 @@
 import Audio from "wd-audio-player";
 
+import "./js-components/cookie-info";
+
 const config = {
   title: '',
   artist: 'Working Draft',
@@ -30,6 +32,8 @@ const config = {
     }
   ],
 }
+
+// window.podPressShowHidePlayer = (...args) => console.log(args);
 
 window.onload = () => {
   const elements = document.querySelectorAll('[data-revision]')

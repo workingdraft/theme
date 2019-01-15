@@ -28,3 +28,7 @@ a,
 a:visited {
   color: var(--color--highlight);
 }
+
+.is-hidden {
+  display: none !important;
+}

@@ -110,24 +110,41 @@
 
       <p class="text text_type-3">
         Unsere Aufnahmen werden optimiert mit
-        <a href="https://auphonic.com/donate_credits?user=Schepp">Auphonic</a>. Flattern oder direkt bei
-        <a href="https://auphonic.com/donate_credits?user=Schepp">Auphonic spenden</a>.
+        <a href="https://auphonic.com/donate_credits?user=Schepp">Auphonic</a>.
+        Dort könnt Ihr uns
+        <a href="https://auphonic.com/donate_credits?user=Schepp">
+          Processing-Time kaufen
+        </a>.
+      </p>
+      <p class="text text_type-3">
+        Alternativ findet Ihr uns jetzt auch auf
+        <a href="https://www.patreon.com/workingdraft">Patreon</a>.
       </p>
 
+      <script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
       <div class="card_action">
-        <button class="button button--primary">Jetzt spenden</button>
+        <iframe
+          src="https://www.patreon.com/platform/iframe?widget=become-patron-button&amp;redirectURI=https%3A%2F%2Fworkingdraft.de%2F&amp;creatorID=13677588"
+          scrolling="no"
+          allowtransparency="true"
+          frameborder="0"
+          class="patreon-widget"
+          title="Patreon Widget"
+          style="position: static; visibility: visible; width: 300px; height: 36px;"
+        ></iframe>
       </div>
     </div>
 
-    <div class="card card--flex">
-      <p class="text text_type-3">
-        Diese Webseite verwendet Cookies, um bestimmte Funktionen zu ermöglichen und das Angebot zu verbessern. Indem Sie hier fortfahren,
-        stimmen Sie der Nutzung von Cookies zu.
+    <div class="card card--flex is-hidden" data-cookie-info>
+      <p class="text text_type-3 text_padded-right">
+        Diese Webseite verwendet Cookies, um bestimmte Funktionen zu ermöglichen
+        und das Angebot zu verbessern. Indem Sie hier fortfahren, stimmen Sie
+        der Nutzung von Cookies zu.
         <a href="#">Mehr Informationen</a>.
       </p>
 
       <div>
-        <button class="button">Akzeptieren</button>
+        <button class="button" data-cookie-info-button>Akzeptieren</button>
       </div>
     </div>
 
