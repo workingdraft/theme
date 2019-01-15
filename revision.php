@@ -45,11 +45,7 @@
     </a>
   <?php endif; ?>
 
-  <div class="card_audio" data-revision>
-    <audio preload="auto" data-audio-player>
-      <source src="<?php bloginfo( "template_url" ); ?>/dist/wd-336.mp3" type="audio/mpeg">
-    </audio>
-  </div>
+  <div class="card_audio" data-revision></div>
 
   <?php if ( !is_single() ) : ?>
     <a href="<?php the_permalink(); ?>" class="card_link text text_type-3">

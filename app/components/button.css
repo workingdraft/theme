@@ -17,6 +17,10 @@
   background: var(--color--accent);
 }
 
+a.button:visited {
+  color: #fff;
+}
+
 .button::after {
   content: '';
   position: absolute;

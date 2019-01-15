@@ -16,6 +16,10 @@
   line-height: 1.5em;
 }
 
+a.text_type-3:visited {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .text_type-4 {
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.875rem;
@@ -23,11 +27,19 @@
   line-height: 1.5em;
 }
 
+a.text_type-4:visited {
+  color: rgba(0, 0, 0, 0.54);
+}
+
 .text_type-5 {
   color: rgba(0, 0, 0, 1);
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.5em;
+}
+
+a.text_type-5:visited {
+  color: rgba(0, 0, 0, 1);
 }
 
 .text_padded-right {

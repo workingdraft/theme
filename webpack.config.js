@@ -6,7 +6,6 @@ const PORT = process.env.PORT || 3000
 module.exports = {
   entry: {
     index: [
-      'babel-polyfill',
       path.resolve(__dirname, 'app/index.js'),
     ],
   },
