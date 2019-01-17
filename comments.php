@@ -5,28 +5,36 @@
   <h3 class="text text_type-2 comments_headline">Kommentare</h3>
 
   <div class="card">
-    <?php if ($comments) : ?>
-      <?php wp_list_comments(array('callback' => 'theme_comment')); ?>
-    <?php else : ?>
-        <p>Noch keine Kommentare oder Backlinks.</p>
-    <?php endif; ?>
+    <div class="text text_type-3">
+      <?php if ($comments) : ?>
+        <?php wp_list_comments(array('callback' => 'theme_comment')); ?>
+      <?php else : ?>
+          <p>Noch keine Kommentare oder Backlinks.</p>
+      <?php endif; ?>
+    </div>
   </div>
 
   <div class="card">
-    <?php comments_rss_link('RSS-Feed zu diesem Beitrag'); ?>
+    <p class="text text_type-3">
+      <?php comments_rss_link('RSS-Feed zu diesem Beitrag'); ?>
+    </p>
   </div>
 
   <?php if (comments_open()) : ?>
     <section class="card">
       <fieldset id="kommentarformular">
-        <?php comment_form(); ?>
+        <p class="text text_type-3">
+          <?php comment_form(); ?>
+        </p>
       </fieldset>
     </section>
   <?php endif; ?>
 
   <?php if (!comments_open()) : ?>
     <div class="card">
-      <p>Kommentare sind für diesen Beitrag geschlossen.</p>
+      <p class="text text_type-3">
+        Kommentare sind für diesen Beitrag geschlossen.
+      </p>
     </div>
   <?php endif; ?>
 </div>

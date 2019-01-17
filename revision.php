@@ -62,7 +62,7 @@
       </a>
     </div>
   <?php else: ?>
-    <div class="text--content">
+    <div class="text--content text text_type-3">
       <?php the_content(); ?>
     </div>
   <?php endif; ?>
