@@ -11,7 +11,9 @@ function theme_comment($comment, $args, $depth){
     </p>
     <?php if ($comment->comment_approved == '0'){ echo '<p><em>Der Kommentar muss noch freigeschaltet werden.</em></p>'; } ?>
     <div class="commentcontent"><?php comment_text(); ?></div>
-    <p class="reply"><?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?></p>
+    <p class="reply">
+      <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
+    </p>
   </div>
   <?php
 }
