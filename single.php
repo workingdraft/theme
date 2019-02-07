@@ -3,6 +3,8 @@
 <div class="content">
   <div class="content_inner">
 
+    <?php include(get_template_directory() . '/cookie.php'); ?>
+
     <?php
       include(get_template_directory() . '/revision.php');
     ?>
