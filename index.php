@@ -14,7 +14,10 @@
 ?>
 
 <?php if ($current_page == 1) : ?>
-  <?php include(get_template_directory() . '/moneymoney.php'); ?>
+  <div class="content--flex">
+    <?php include(get_template_directory() . '/soundquality.php'); ?>
+    <?php include(get_template_directory() . '/moneymoney.php'); ?>
+  </div>
 <?php endif; ?>
 
 <?php

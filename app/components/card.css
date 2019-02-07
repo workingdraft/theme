@@ -1,7 +1,7 @@
 @import url("variables.css");
 
 .card {
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 2px;
   background: #fff;
@@ -50,7 +50,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left: -1rem;
+  left: -2rem;
   bottom: 0;
   width: 1rem;
   background: inherit;
@@ -58,24 +58,36 @@
 
 .card_audio::after {
   left: auto;
-  right: -1rem;
+  right: -2rem;
 }
 
 .card_action {
   position: relative;
   margin-top: 1rem;
-  padding-top: 1rem
+  padding-top: 1.5rem
 }
 
 .card_action::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -1rem;
-  right: -1rem;
+  left: -2rem;
+  right: -2rem;
   border-top: 1px solid var(--color--border);
+}
+
+.card_action a {
+  text-decoration: none;
 }
 
 .card_info_item {
   padding-right: 1rem;
+}
+
+@media (min-width: 32em) {
+  .card--small {
+    flex: 1;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
 }
