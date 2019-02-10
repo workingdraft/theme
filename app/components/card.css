@@ -43,6 +43,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   background: var(--color--audio-background);
+  height: 6.5rem;
 }
 
 .card_audio::before,
@@ -52,7 +53,7 @@
   top: 0;
   left: -2rem;
   bottom: 0;
-  width: 1rem;
+  width: 2rem;
   background: inherit;
 }
 
