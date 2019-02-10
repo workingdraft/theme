@@ -1,4 +1,4 @@
-import Audio from "wd-audio-player";
+import Player from "wd-audio-player";
 import M from "../utils/M";
 
 const config = {
@@ -35,9 +35,10 @@ const config = {
 const name = 'revision';
 
 class Revision {
-  constructor(element, data) {
+  constructor(element, data, callback) {
     this.element = element;
     this.data = data;
+    this.callback = callback;
   }
 
   getTemplate() {
@@ -59,24 +60,36 @@ class Revision {
     fragment.appendChild(element);
 
     return fragment;
-  };
+  }
+
+  handleCallback() {
+    const audioElement = this.element.querySelector('audio');
+
+    audioElement.addEventListener("loadeddata", () => this.callback());
+  }
 
   render() {
     const content = this.getTemplate();
-    const fragment = this.createFragment(content)
+    const fragment = this.createFragment(content);
 
     this.element.appendChild(fragment);
+    this.handleCallback(fragment);
   }
 }
 
 export default () => {
   const elements = M.getElements(name);
 
-  elements.forEach(element => {
-    new Revision(element, {
-      fileUrl: 'https://workingdraft.de/wp-content/uploads/mp3/wd-373.mp3',
-    }).render();
+  // time: '.podpress_mediafile_dursize_audio_mp3'
 
-    new Audio.Player(element, config).initialize();
+  elements.forEach(element => {
+    const link = element.querySelector('.podpress_downloadimglink_audio_mp3');
+    const player = M.getElements(`${name}-player`);
+
+    new Revision(player[0], {
+      fileUrl: link.href,
+    }, () => {
+      new Player(player[0], config).initialize();
+    }).render();
   });
 };

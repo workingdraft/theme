@@ -1,6 +1,4 @@
-if (!global._babelPolyfill) {
-  require('babel-polyfill');
-}
+import "regenerator-runtime/runtime";
 
 import CookieInfo from "./js-components/cookie-info";
 import Revision from "./js-components/revision";
