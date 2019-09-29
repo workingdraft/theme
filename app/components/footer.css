@@ -14,7 +14,7 @@
 .footer__content {
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .footer a {
@@ -51,6 +51,10 @@
   margin: 0 auto 1rem;
   border-radius: 50%;
   display: block;
+}
+
+.footer__authors__item {
+  margin: 1rem;
 }
 
 .footer__follow {
