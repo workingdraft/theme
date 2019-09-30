@@ -1,6 +1,7 @@
 @import url("variables.css");
 
-.button {
+.button,
+.form-submit .submit {
   position: relative;
   color: #fff;
   border: 0;
@@ -37,7 +38,8 @@ a.button:visited {
   background: var(--color--highlight);
 }
 
-.button:hover::after {
+.button:hover::after,
+.form-submit .submit:hover::after {
   opacity: 0.15;
 }
 

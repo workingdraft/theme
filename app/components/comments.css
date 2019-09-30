@@ -5,3 +5,15 @@
 .comment h4 {
   margin: 0;
 }
+
+.comment-respond label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.comment-respond textarea,
+.comment-respond input {
+  padding: 0.5rem;
+  border: 1px solid var(--color--base);
+  border-radius: 2px;
+}
