@@ -11,11 +11,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <title><?php wp_title(' | ', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-  <meta name="description" content="<?php echo $description; ?>">
-  <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png" type="image/png">
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
-  <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="preload"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons"
@@ -29,7 +25,14 @@
     onload="this.rel = 'stylesheet'"
   >
 
+  <title><?php wp_title(' | ', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+  <meta name="description" content="<?php echo $description; ?>">
+  <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png" type="image/png">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+  <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
+
   <script async src="<?php bloginfo( 'template_url' ); ?>/dist/index.js"></script>
+
 <?php
   /* We add some JavaScript to pages with the comment form
    * to support sites with threaded comments (when in use).
