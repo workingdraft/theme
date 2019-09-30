@@ -71,6 +71,7 @@ class Revision {
   render() {
     const content = this.getTemplate();
     const fragment = this.createFragment(content);
+    this.element.innerHTML = "";
 
     this.element.appendChild(fragment);
     this.handleCallback(fragment);
@@ -80,16 +81,25 @@ class Revision {
 export default () => {
   const elements = M.getElements(name);
 
-  // time: '.podpress_mediafile_dursize_audio_mp3'
-
   elements.forEach(element => {
-    const link = element.querySelector('.podpress_downloadimglink_audio_mp3');
-    const player = M.getElements(`${name}-player`);
+    const players = M.getElements(`${name}-player`, element);
 
-    new Revision(player[0], {
-      fileUrl: link.href,
-    }, () => {
-      new Player(player[0], config).initialize();
-    }).render();
+    players.forEach((player) => {
+      const fileUrl = player.dataset[`${name}Player`];
+      const playerConfig = {
+        ...config,
+        title: player.dataset[`${name}Title`],
+      };
+
+      if (!fileUrl) {
+        return;
+      }
+
+      new Revision(player, {
+        fileUrl: fileUrl,
+      }, () => {
+        new Player(player, playerConfig).initialize();
+      }).render();
+    });
   });
 };

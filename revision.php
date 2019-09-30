@@ -49,8 +49,13 @@
   <div
     class="card_audio"
     data-revision-player="<?php print get_post_meta(get_the_ID(), '_podPressMedia')[0][0]["URI"] ?>"
+    data-revision-title="<?php the_title(); ?>"
   >
-  <img src="<?php bloginfo( 'template_url' ); ?>/app/images/loader.svg" alt="Loading..." class="card_loader" />
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/app/images/loader.svg"
+      alt="Loading..."
+      class="card_loader"
+    />
   </div>
 
   <?php if ( !is_single() ) : ?>
