@@ -37,7 +37,7 @@
         <?php comments_number('Keine Kommentare', '1 Kommentar', '% Kommentare'); ?>
       </span>
 
-      <span class="text_type-4 card_info_item">1:01:44h</span>
+      <?php // <span class="text_type-4 card_info_item"></span> ?>
     </p>
 
   <?php if ( is_single() ) : ?>
@@ -46,7 +46,12 @@
     </a>
   <?php endif; ?>
 
-  <div class="card_audio" data-revision-player></div>
+  <div
+    class="card_audio"
+    data-revision-player="<?php print get_post_meta(get_the_ID(), '_podPressMedia')[0][0]["URI"] ?>"
+  >
+  <img src="<?php bloginfo( 'template_url' ); ?>/app/images/loader.svg" alt="Loading..." class="card_loader" />
+  </div>
 
   <?php if ( !is_single() ) : ?>
     <a href="<?php the_permalink(); ?>" class="card_link text text_type-3">

@@ -85,6 +85,14 @@
   padding-right: 1rem;
 }
 
+
+.card_loader {
+  display: flex;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 32em) {
   .card--small {
     flex: 1;
