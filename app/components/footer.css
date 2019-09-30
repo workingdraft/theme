@@ -53,10 +53,6 @@
   display: block;
 }
 
-.footer__authors__item {
-  margin: 1rem;
-}
-
 .footer__follow {
   margin: 3rem 0;
 }
@@ -80,4 +76,10 @@
 .footer__navigation>ul>li>a {
   margin: 0 16px;
   margin: 0 1rem;
+}
+
+@media (min-width: 32em) {
+  .footer__authors__item {
+    margin: 1rem;
+  }
 }

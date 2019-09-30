@@ -10,8 +10,6 @@
 .content--flex {
   display: flex;
   flex-direction: column;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
 }
 
 @media (min-width: 60em) {
@@ -28,5 +26,7 @@
 
   .content--flex {
     flex-direction: row;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
   }
 }
