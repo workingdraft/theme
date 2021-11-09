@@ -34,6 +34,16 @@ if (is_single() or is_page()) {
 	 */
   wp_head();
   ?>
+
+  <meta name="twitter:site" content="@workingdraft" />
+  <meta name="twitter:title" content="<?php wp_title(" | ", true, "right"); ?> <?php bloginfo('name'); ?>" />
+  <meta name="twitter:description" content="<?php echo $description; ?>" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://workingdraft.de/wp-content/themes/Working-Draft/icon.png" />
+
+  <meta name="og:title" content="<?php wp_title(" | ", true, "right"); ?> <?php bloginfo('name'); ?>" />
+  <meta name="og:description" content="<?php echo $description; ?>" />
+  <meta name="og:image" content="https://workingdraft.de/wp-content/themes/Working-Draft/icon.png" />
 </head>
 
 <body>
