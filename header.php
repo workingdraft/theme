@@ -10,13 +10,17 @@
 ?>
 
 <!doctype html>
+<html lang="de">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
 	<title><?php wp_title(' | ', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 	<meta name="description" content="<?php echo $description; ?>">
 	<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png" type="image/png">
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
+	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> | Alle Kommentare" href="<?php bloginfo('comments_rss2_url'); ?>">
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -37,12 +41,12 @@
 
 
 <hgroup>
-	<h1><a href="<?php bloginfo(url); ?>"><?php bloginfo('name') ?></a></h1>
+	<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name') ?></a></h1>
 	<h2><?php bloginfo('description') ?></h2>
 </hgroup>
 
 
-<a href="<?php bloginfo(url); ?>"><img id="icon" src="<?php bloginfo(template_url); ?>/icon.png" alt=""></a>
+<a href="<?php bloginfo('url'); ?>"><img id="icon" src="<?php bloginfo('template_url'); ?>/icon.png" alt=""></a>
 
 <?php
 	if(!is_single() AND !is_page()){
@@ -64,18 +68,19 @@
 		<dt>Abonnieren:</dt>
 		<dd><a href="<?php bloginfo('rss_url'); ?>">RSS-Feed</a></dd>
 		<dd><a href="http://itunes.apple.com/de/podcast/working-draft/id402204581">iTunes-Feed</a></dd>
-		<dd><a href="http://twitter.com/workingdraft">Twitter</a></dd>
+		<dd><a href="https://twitter.com/workingdraft">Twitter</a></dd>
 		<dd><a href="/comments/feed/">Kommentarfeed</a></dd>
 		<dt>Moderatoren:</dt>
-		<dd>Peter Kröner (<a href="http://twitter.com/sir_pepe">@sir_pepe</a>)</dd>
-		<dd>Hans Christian Reinl (<a href="http://twitter.com/drublic">@drublic</a>)</dd>
-		<dd>Rodney Rehm (<a href="http://twitter.com/rodneyrehm">@rodneyrehm</a>)</dd>
-		<dd>Stefan Baumgartner (<a href="http://twitter.com/ddprrt">@ddprrt</a>)</dd>
-		<dd>Christian "Schepp" Schaefer (<a href="http://twitter.com/derSchepp">@derSchepp</a>)</dd>
+		<dd>Peter Kröner (<a href="https://twitter.com/sir_pepe">@sir_pepe</a>)</dd>
+		<dd>Hans Christian Reinl (<a href="https://twitter.com/drublic">@drublic</a>)</dd>
+		<dd>Rodney Rehm (<a href="https://twitter.com/rodneyrehm">@rodneyrehm</a>)</dd>
+		<dd>Stefan Baumgartner (<a href="https://twitter.com/ddprrt">@ddprrt</a>)</dd>
+		<dd>Kahlil Lechelt (<a href="https://twitter.com/distilledhype">@kahliltweets</a>)</dd>
+		<dd>Christian "Schepp" Schaefer (<a href="https://twitter.com/derSchepp/">@derSchepp</a>)</dd>
+		<dd>Vanessa Otto (<a href="https://twitter.com/vannsl">@vannsl</a>)</dd>
 		<dt>Verdiente Ruheständler:</dt>
-		<dd>Markus Schlegel (<a href="http://twitter.com/markus_schlegel">@markus_schlegel</a>)</dd>
-		<dd>Kahlil Lechelt (<a href="http://twitter.com/distilledhype">@distilledhype</a>)</dd>
-		<dd>Anselm Hannemann (<a href="http://twitter.com/helloanselm">@helloanselm</a>)</dd>
+		<dd>Markus Schlegel (<a href="https://twitter.com/markus_schlegel">@markus_schlegel</a>)</dd>
+		<dd>Anselm Hannemann (<a href="https://twitter.com/helloanselm">@helloanselm</a>)</dd>
 		<dt>Rechtliches:</dt>
 		<dd><a href="/impressum/">Impressum</a></dd>
 		<dd><a href="/datenschutzerklaerung/">Datenschutzerklärung</a></dd>
@@ -83,19 +88,22 @@
 
 
 	<div id="schnorren">
-		<h2>Spenden für Soundqualität!</h2>
-		<p>Unsere Aufnahmen werden optimiert mit <a href="https://auphonic.com/donate_credits?user=Schepp">Auphonic</a>.<br>Flattern oder direkt bei <a href="https://auphonic.com/donate_credits?user=Schepp">Auphonic spenden</a>.</p>
+		<h2>Unterstützung</h2>
+		<p>
+		Wir optimieren unser Audio mit Auphonic, wo ihr uns <a href="https://auphonic.com/donate_credits?user=Schepp">Processing-Time kaufen könnt!</a>
+		Alternativ findet Ihr uns auch auf Patreon:<br><br> <a href="https://www.patreon.com/bePatron?u=13677588" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+		</p>
 	</div>
 </div>
 
 
 <div class="message" id="sponsoring">
-  <h2>Sponsoren gesucht!</h2>
-
-  <p>Als Podcast versuchen wir die Qualität der Aufnahmen hoch zu halten. Dafür verwenden wir Tools, die nicht kostenlos sind. Auch unser Aufnahme-Equipment kostet Geld.</p>
-  <p>Mit rund 15.000 Downloads pro Folge im Schnitt haben wir Herausforderungen im Hosting zu bewältigen, vor allem der Traffic ist recht hoch.</p>
-  <p>Um diese Kosten decken zu können, suchen wir Sponsoren. Wenn ihr unseren Podcast gut findest, sprecht mit euren Chefs.
-  Bei Interesse, kontaktiert uns per E-Mail: <a href="mailto:sponsoring@workingdraft.de">sponsoring@workingdraft.de</a>.</p>
+  <h2>Werben bei Working Draft!</h2>
+  <p>Mit zehnjähriger Geschichte und über 5000 Downloads pro Folge ist Working Draft
+  der etablierteste Podcast für Webentwickler im deutschsprachigen Raum.
+  Wenn ihr neue Entwicklerkollegen sucht oder ein Produkt für Webentwickler
+  anbietet, schreibt uns unter <a href="mailto:sponsoring@workingdraft.de">sponsoring@workingdraft.de</a>.
+  </p>
 </div>
 <?php
 	}
