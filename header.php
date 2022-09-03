@@ -80,16 +80,16 @@ if (is_single() or is_page()) {
         <dd><a href="https://twitter.com/workingdraft">Twitter</a></dd>
         <dd><a href="/comments/feed/">Kommentarfeed</a></dd>
         <dt>Moderatoren:</dt>
-        <dd>Peter Kröner (<a href="https://twitter.com/sir_pepe">@sir_pepe</a>)</dd>
-        <dd>Hans Christian Reinl (<a href="https://twitter.com/drublic">@drublic</a>)</dd>
-        <dd>Rodney Rehm (<a href="https://twitter.com/rodneyrehm">@rodneyrehm</a>)</dd>
-        <dd>Stefan Baumgartner (<a href="https://twitter.com/ddprrt">@ddprrt</a>)</dd>
-        <dd>Kahlil Lechelt (<a href="https://twitter.com/distilledhype">@kahliltweets</a>)</dd>
         <dd>Christian "Schepp" Schaefer (<a href="https://twitter.com/derSchepp/">@derSchepp</a>)</dd>
+        <dd>Hans Christian Reinl (<a href="https://twitter.com/drublic">@drublic</a>)</dd>
+        <dd>Stefan Baumgartner (<a href="https://twitter.com/ddprrt">@ddprrt</a>)</dd>
         <dd>Vanessa Otto (<a href="https://twitter.com/vannsl">@vannsl</a>)</dd>
         <dt>Verdiente Ruheständler:</dt>
-        <dd>Markus Schlegel (<a href="https://twitter.com/markus_schlegel">@markus_schlegel</a>)</dd>
         <dd>Anselm Hannemann (<a href="https://twitter.com/helloanselm">@helloanselm</a>)</dd>
+        <dd>Kahlil Lechelt (<a href="https://twitter.com/distilledhype">@kahliltweets</a>)</dd>
+        <dd>Markus Schlegel (<a href="https://twitter.com/markus_schlegel">@markus_schlegel</a>)</dd>
+        <dd>Peter Kröner (<a href="https://twitter.com/sir_pepe">@sir_pepe</a>)</dd>
+        <dd>Rodney Rehm (<a href="https://twitter.com/rodneyrehm">@rodneyrehm</a>)</dd>
         <dt>Rechtliches:</dt>
         <dd><a href="/impressum/">Impressum</a></dd>
         <dd><a href="/datenschutzerklaerung/">Datenschutzerklärung</a></dd>
