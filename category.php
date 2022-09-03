@@ -18,7 +18,7 @@ get_header('small'); ?>
     <header class="archive-header">
       <h1 class="archive-title"><?php printf(single_cat_title('', false)); ?></h1>
 
-      <?php if (category_description()) : // Show an optional category description 
+      <?php if (category_description()) : // Show an optional category description
       ?>
         <div class="archive-meta"><?php echo category_description(); ?></div>
       <?php endif; ?>
